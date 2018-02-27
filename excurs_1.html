@@ -18,6 +18,26 @@
     $('.map').maphilight();
     });</script>
 
+    <script type="text/javascript">
+     function playAudio(s){
+        var myAudio = new Audio;
+        if (s == 1){
+            myAudio.src = "./audio/03.aac";
+        } else if (s == 2){
+            myAudio.src = "./audio/04.aac";
+        }
+        myAudio.play();
+     }
+    jQuery(function(){
+        $('#01aac').click(function(){
+            playAudio(1);
+        });
+        $('#02aac').click(function(){
+            playAudio(2);
+        });
+    });
+    </script>
+
   </head>
   <body bgcolor=white>
 
@@ -25,12 +45,12 @@
       <img class="map" src="./image/backgrall.jpg" width="1280" usemap="#mapmuz">
     </center>
     <map name="mapmuz">
-    <area class="lightview" 
+    <area class="lightview" id="01aac" onclick="playAudio();" 
     data-lightview-caption="Ученический портфель 1970-е годы." 
     href="image/3d/001.gif" 
     title="Ученический портфель 1970-е годы" shape="poly" coords="789,473,787,454,793,437,788,428,814,425,817,421,882,413,887,415,892,417,912,415,921,420,925,449,922,456,924,472">
 
-    <area class="lightview" 
+    <area class="lightview" id="02aac" onclick="playAudio();" 
     data-lightview-title="Ручка деревянная со стальным пером и флакон из-под чернил первой половины XX века." data-lightview-caption="<a href=image/3d/001.gif>Посмотреть в 3D</a>"
     href="image/3d/002.gif" 
     title="Ручка деревянная со стальным пером и флакон из-под чернил первой половины 20 века" shape="poly" coords="925,302,924,300,924,277,929,273,930,265,938,263,939,259,1013,314,1011,318,946,272,944,276,949,282,949,302,948,304,926,303">
