@@ -21,51 +21,119 @@
     <script type="text/javascript">
      function playAudio(s){
         var myAudio = new Audio;
-        if (s == 1){
+        if (s == 3){
             myAudio.src = "./audio/03.aac";
-        } else if (s == 2){
+        } else if (s == 4){
             myAudio.src = "./audio/04.aac";
+        } else if (s == 5){
+            myAudio.src = "./audio/05.aac";
+        } else if (s == 6){
+            myAudio.src = "./audio/06.aac";
+        } else if (s == 7){
+            myAudio.src = "./audio/07.aac";
+        } else if (s == 8){
+            myAudio.src = "./audio/08.aac";
+        } else if (s == 9){
+            myAudio.src = "./audio/09.aac";
+        } else if (s == 10){
+            myAudio.src = "./audio/10.aac";
+        } else if (s == 11){
+            myAudio.src = "./audio/11.aac";
+        } else if (s == 12){
+            myAudio.src = "./audio/12.aac";
+        } else if (s == 13){
+            myAudio.src = "./audio/13.aac";
+        } else if (s == 14){
+            myAudio.src = "./audio/14.aac";
+        } else if (s == 15){
+            myAudio.src = "./audio/15.aac";
+        } else if (s == 16){
+            myAudio.src = "./audio/16.aac";
+        } else if (s == 18){
+            myAudio.src = "./audio/18.mp3";
         }
         myAudio.play();
      }
     jQuery(function(){
-        $('#01aac').click(function(){
-            playAudio(1);
+        $('#03aac').click(function(){
+            playAudio(3);
         });
-        $('#02aac').click(function(){
-            playAudio(2);
+        $('#04aac').click(function(){
+            playAudio(4);
+        });
+        $('#05aac').click(function(){
+            playAudio(5);
+        });
+        $('#06aac').click(function(){
+            playAudio(6);
+        });
+        $('#07aac').click(function(){
+            playAudio(7);
+        });
+        $('#08aac').click(function(){
+            playAudio(8);
+        });
+        $('#09aac').click(function(){
+            playAudio(9);
+        });
+        $('#10aac').click(function(){
+            playAudio(10);
+        });
+        $('#11aac').click(function(){
+            playAudio(11);
+        });
+        $('#12aac').click(function(){
+            playAudio(12);
+        });
+        $('#13aac').click(function(){
+            playAudio(13);
+        });
+        $('#14aac').click(function(){
+            playAudio(14);
+        });
+        $('#15aac').click(function(){
+            playAudio(15);
+        });
+        $('#16aac').click(function(){
+            playAudio(16);
+        });
+        $('#18mp3').mouseenter(function(){
+            playAudio(18);
         });
     });
     </script>
 
   </head>
   <body bgcolor=white>
-
+    <audio autoplay>
+      <source src="audio/02.aac" type="audio/mpeg">
+      Тег audio не поддерживается вашим браузером. 
+    </audio>
     <center>
       <img class="map" src="./image/backgrall.jpg" width="1280" usemap="#mapmuz">
     </center>
     <map name="mapmuz">
-    <area class="lightview" id="01aac" onclick="playAudio();" 
+    <area class="lightview" id="03aac" onclick="playAudio();" 
     data-lightview-caption="Ученический портфель 1970-е годы." 
     href="image/3d/001.gif" 
     title="Ученический портфель 1970-е годы" shape="poly" coords="789,473,787,454,793,437,788,428,814,425,817,421,882,413,887,415,892,417,912,415,921,420,925,449,922,456,924,472">
 
-    <area class="lightview" id="02aac" onclick="playAudio();" 
+    <area class="lightview" id="04aac" onclick="playAudio();" 
     data-lightview-title="Ручка деревянная со стальным пером и флакон из-под чернил первой половины XX века." data-lightview-caption="<a href=image/3d/001.gif>Посмотреть в 3D</a>"
     href="image/3d/002.gif" 
-    title="Ручка деревянная со стальным пером и флакон из-под чернил первой половины 20 века" shape="poly" coords="925,302,924,300,924,277,929,273,930,265,938,263,939,259,1013,314,1011,318,946,272,944,276,949,282,949,302,948,304,926,303">
+    title="Ручка деревянная со стальным пером и флакон из-под чернил первой половины XX века" shape="poly" coords="925,302,924,300,924,277,929,273,930,265,938,263,939,259,1013,314,1011,318,946,272,944,276,949,282,949,302,948,304,926,303">
 
-    <area class="lightview" 
+    <area class="lightview" id="05aac" onclick="playAudio();"
     data-lightview-caption="Чернильница и перьевая ручка из эбонита."
     href="image/3d/003.gif" 
     title="Чернильница и перьевая ручка из эбонита" shape="poly" coords="780,530,779,515,825,500,829,499,839,502,931,535,926,539,864,518,864,522,863,525,824,539,820,540">
 
-    <area class="lightview" 
+    <area class="lightview" id="06aac" onclick="playAudio();"
     data-lightview-caption="Фарфоровые чернильницы."
     href="image/3d/004.gif" 
     title="Фарфоровые чернильницы" shape="poly" coords="822,609,819,604,820,577,824,573,842,574,849,576,851,580,851,585,873,585,886,587,900,583,915,581,925,583,931,587,931,593,928,598,927,609,917,613,905,610,903,605,903,598,892,594,894,624,891,628,966,630,952,638,946,639,873,638,837,636,815,632,818,630,860,630,857,625,856,612,857,594,851,593,850,606,845,609,834,612">
 
-    <area class="lightview" 
+    <area class="lightview" id="07aac" onclick="playAudio();"
     data-lightview-caption="Тетрадь первоклассницы."
     data-lightview-group="thumbnail-tetr" 
     data-lightview-group-options="controls: 'thumbnails'"
@@ -84,17 +152,17 @@
 	   data-lightview-group="thumbnail-tetr"
 	   data-lightview-caption="Тетрадь первоклассницы. Третья страница.">
 
-    <area class="lightview" 
+    <area class="lightview" id="09aac" onclick="playAudio();"
     data-lightview-caption="Пластмассовый пенал."
     href="image/3d/006.gif" 
     title="Пластмассовый пенал" shape="poly" coords="648,513,651,506,651,476,776,471,781,474,783,499,783,501,792,502,795,509,790,510,655,515">
 
-    <area class="lightview" 
+    <area class="lightview" id="10aac" onclick="playAudio();"
     data-lightview-caption="Точилка для карандашей «Рыбка»."
     href="image/3d/007.gif" 
     title="Точилка для карандашей «Рыбка»" shape="poly" coords="306,522,280,504,303,501,309,492,332,494,349,497,358,501,359,505,377,515,377,516">
 
-    <area class="lightview" 
+    <area class="lightview" id="11aac" onclick="playAudio();"
     data-lightview-caption="Логарифмическая линейка."
     data-lightview-group="thumbnail-ll" 
     data-lightview-group-options="controls: 'thumbnails'"
@@ -105,7 +173,7 @@
 	   data-lightview-group="thumbnail-ll"
 	   data-lightview-caption="Логарифмическая линейка.">
 
-    <area class="lightview" 
+    <area class="lightview" id="12aac" onclick="playAudio();"
     data-lightview-caption="Классный журнал 5 «А» класса 1947-1948 учебного года."
     data-lightview-group="thumbnail-cj" 
     data-lightview-group-options="controls: 'thumbnails'"
@@ -128,7 +196,7 @@
 	   data-lightview-group="thumbnail-cj"
 	   data-lightview-caption="Классный журнал 5 «А» класса 1947-1948 учебного года.">
 
-    <area class="lightview" 
+    <area class="lightview" id="13aac" onclick="playAudio();"
     data-lightview-caption="Учебное пособие «Сумма острых углов прямоугольного треугольника» 30-х годов XX века."
     data-lightview-group="thumbnail-tr" 
     data-lightview-group-options="controls: 'thumbnails'"
@@ -147,27 +215,27 @@
 	   data-lightview-group="thumbnail-tr"
 	   data-lightview-caption="Учебное пособие «Сумма острых углов прямоугольного треугольника» 30-х годов XX века.">
 
-    <area class="lightview" 
+    <area class="lightview" id="14aac" onclick="playAudio();"
     data-lightview-caption="Учебник Английского языка для 7-8 классов семилетней и средней школы. 1946 год. Авторы Белова Е.В., Тодд Л.Р."
     href="image/3d/011.gif" 
     title="Учебник Английского языка для 7-8 классов семилетней и средней школы. 1946 год. Авторы Белова Е.В., Тодд Л.Р." shape="poly" coords="798,288,794,283,795,278,798,187,802,179,868,182,871,185,880,276,879,286">
 
-    <area class="lightview" 
+    <area class="lightview" id="15aac" onclick="playAudio();"
     data-lightview-caption="Пишущая машинка."
     href="image/big/012.jpg" 
     title="Пишущая машинка" shape="poly" coords="988,677,978,644,1008,542,1022,527,1030,511,1026,503,1001,515,996,515,1036,487,1048,490,1210,509,1215,518,1213,531,1211,544,1209,548,1213,555,1228,659,1222,677,1214,692,1201,698,1165,702,1095,699">
 
-    <area class="lightview" 
+    <area class="lightview" id="08aac" onclick="playAudio();"
     data-lightview-caption="Автоматическая ручка 70-х годов XX века."
     href="image/big/013.jpg" 
     title="Автоматическая ручка" shape="poly" coords="619,684,618,677,723,643,733,642,744,639,787,645,788,653,786,658,770,657,753,653,742,648,733,645,724,652,706,659">
 
-	<area class="lightview" 
+	<area class="lightview" id="04aac" onclick="playAudio();" 
     data-lightview-caption="Ручка деревянная со стальным пером и чернильница первой половины XX века."
     href="image/3d/014.gif" 
     title="Ручка деревянная со стальным пером и чернильница первой половины XX века" shape="poly" coords="628,536,626,531,619,527,618,502,623,494,637,493,646,496,647,502,647,526,647,529,724,529,729,532,732,533,742,536,632,537">
 
-    <area class="lightview" 
+    <area class="lightview" id="16aac" onclick="playAudio();"
     data-lightview-caption="Современный компьютер."
     href="image/big/015.jpg" 
     title="Современный компьютер" shape="poly" coords="1080,151,1093,138,1132,144,1135,142,1099,109,1124,101,1124,97,1153,31,1272,13,1245,113,1263,120,1261,125,1227,144,1224,147,1199,136,1194,142,1190,145,1181,147,1151,158,1134,147,1117,160,1109,160">
@@ -187,7 +255,7 @@
     href="image/big/102.jpg" 
     title="Октябренок. Пионер. Комсомолец." shape="poly" coords="4,211,138,200,160,343,4,366">
 
-    <area href="index.html" 
+    <area href="index.html" id="18mp3" onclick="playAudio();" 
     title="Назад" shape="poly" coords="9,658,94,608,94,610,66,658,93,706">
     </map>
 
