@@ -1,0 +1,238 @@
+@import "compass/css3";
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.50;
+    color: #111111;
+    background-color: #ffffff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: 0;
+  text-align: center;
+}
+
+.container > * {
+  padding: 0;
+  margin: 2px;
+  flex: 1 100%;
+
+}
+
+.header {
+  display: flex;
+  background-image: url("../image/bg.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 15px 15px;
+  align-items: center;
+  flex-direction: column;
+  padding: 7px 0 0 0;
+}
+
+.footer {
+  background-image: url("../image/bg.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 15px 15px;
+  padding: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("../image/bg.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 15px 15px;
+  flex-grow: 1;
+  padding: 5px;
+  flex-basis: 74%;
+}
+
+.left {
+  background-image: url("../image/bg.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 15px 15px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 5px;
+  flex-basis: 13%;
+}
+
+.right {
+  background-image: url("../image/bg.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 15px 15px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 5px;
+  flex-basis: 13%;
+}
+
+.imghead {
+  width: 400px
+}
+.imgproj {
+  width: 95%
+}
+.imgproj:hover { 
+  width: 100%
+}
+
+
+@media screen and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .left    { order: 1; } 
+  .main    { order: 2; }
+  .right   { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 0em; 
+}
+
+.navbar ul{
+        display: none;
+        background-color: #003377;
+        position: absolute;
+        top: 100%;
+        border-radius: 15px 15px;
+      }
+.navbar li:hover ul { display: block; }
+.navbar, .navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+.navbar {
+        display: flex;
+        justify-content: center;
+        width: 735px;
+        text-align: center;
+        list-style-type: none;
+        border: 2px solid #0066FF;
+        border-radius: 15px 15px;
+        height: 30px;
+        background-color: #003377;
+        padding-left: 5px;
+      }
+.navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+.navbar li a {
+        display: block;
+        padding: 5px 10px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+.navbar ul li { float: none; }
+.navbar li:hover { 
+        background-color: #0066FF;
+        border-radius: 15px 15px;
+}
+.navbar ul li:hover { 
+        background-color: #0066FF;
+        border-radius: 15px 15px;
+}
+
+.proj {
+  display: flex;
+  justify-content: space-around;
+  padding: 3px;
+  flex-wrap: wrap;
+}
+.cp {
+  align-self: center;
+  text-align: center;
+  margin: 2px;
+}
+
+.news {
+  display: flex;
+  margin: 0 22px;
+  padding: 1px;
+  border-top: 1px solid #3498db;
+  text-align: left;
+}
+.moth {
+  text-align: left;
+  margin: 5px;
+  padding: 10px;
+  justify-content: center;
+}
+.annot {
+  display: flex;
+  margin: 0 22px;
+  padding: 1px;
+  text-align: left;
+}
+
+.razd {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opr {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
+  margin: 5px;
+}
+
+.hlast {
+  margin: 8px;
+  padding: 5px 20px;
+  background-color: #333;
+  border-radius: 15px 15px;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  font-style: bold;
+}
+.nmanga {
+  text-align: left;
+  margin: 15px 20px 0;
+  border-bottom: 1px solid #666;
+  font: bold italic 120% serif;
+}
+.nmanga a {
+  color: #000;
+  text-decoration: none;
+}
+.nmanga a:hover { 
+    text-decoration: underline #000;
+}
+.vols {
+  text-align: left;
+  margin: 2px 20px;
+  font: italic 110% serif;
+}
+.vols a {
+  color: #000;
+  text-decoration: none;
+}
+.vols a:hover { 
+    text-decoration: underline #000;
+}

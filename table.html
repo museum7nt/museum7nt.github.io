@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ru">
   <head>
    <meta charset="utf-8">
-   <title>Старейшая школа Вагонки</title>
+   <title>Мой любимый портфель</title>
    
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115297915-1"></script>
@@ -15,28 +15,100 @@
 </script>
 
    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="./js/jquery.min.js"></script>
    <script type="text/javascript" src="./js/jquery.reel.js"></script>
+
+   <script type="text/javascript" src="./js/jquery.maphilight.min.js"></script>
+   <script type="text/javascript">$(function() {
+    $('.map').maphilight();
+    });</script>
+
+   <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      #image-reel{ font-size: 85%; }
+      #image-reel .reel-annotation { color: #6a7587; white-space: nowrap; font-weight: bold; font-size: 108%; color: #6a7587; cursor: help; }
+      #image-reel a.reel-annotation { color: #dde5de; }
+      #image-reel .far.reel-annotation { font-size: 85%; color: #a3b4bc; }
+      #image-reel a.far.reel-annotation { color: #a3b4bc; }
+      #image-reel .near.reel-annotation { font-size: 163%; color: #fff5de; }
+      #image-reel a.near.reel-annotation { color: #fff5de; }
+      #image-reel .title.reel-annotation { font-size: 85%; color: white; }
+      #image-reel a.title.reel-annotation { color: white; }
+      #image-reel .headline.reel-annotation { font-size: 280%; opacity: 0.5; color: white; cursor: inherit; }
+      #image-reel a.headline.reel-annotation { color: white; }
+    </style>
+
   </head>
   <body bgcolor=white>
 
     <center>
-    Модель "Школьная парта"
-      <img src="image/table/0101.jpg" 
+    <img src="image/schoolbag/PANO_master_.jpg" width="1100" height="700"
       class="reel"
       id="image"
-      data-images="image/table/0###.jpg|101..140">
-    <p>
-    Панорама экспозиции
-      <img src="image/pano2.jpg" width="700" height="400"
-      class="reel"
-      id="image"
-      data-image="image/pano2.jpg"
-      data-stitched="1152"
+      data-image="image/schoolbag/PANO_master_.jpg"
+      data-stitched="1900"
       data-frames="60"
-      data-frame="23"
-      data-speed="0.05"
-      data-clickfree="true"
-      data-wheelable="false">
+      data-frame="30"
+      data-rows="1"
+      data-row="1"
+      data-loops="false"
+      data-orientable="true"
+      usemap="#mapmuz">
+
+    <span class="reel-annotation headline"
+      id="headline"
+      data-x="800"
+      data-y="635"
+      data-for="image">
+      Панорама "Мой любимый портфель"
+    </span>
+    <a class="reel-annotation"
+      href="image/schoolbag/IMG_20180329_123456.jpg"
+      id="clatch"
+      data-x="730"
+      data-y="530"
+      data-for="image">
+      Учительский клатч 1980-е годы
+    </a>
+    <a class="reel-annotation"
+      href="image/schoolbag/IMG_20180329_123515.jpg"
+      id="clatch_1"
+      data-x="730"
+      data-y="480"
+      data-for="image">
+      Клатч
+    </a>
+    <a class="reel-annotation"
+      href="image/schoolbag/IMG_20180329_123718.jpg"
+      id="sacvojage"
+      data-x="590"
+      data-y="565"
+      data-for="image">
+      Саквояж 1980-е годы
+    </a>
+    <a class="reel-annotation"
+      href="image/schoolbag/IMG_20180329_123447.jpg"
+      id="plansh"
+      data-x="800"
+      data-y="610"
+      data-for="image">
+      Клатч 1950-е годы
+    </a>
+    <a class="reel-annotation"
+      href="image/schoolbag/IMG_20180329_123543.jpg"
+      id="books"
+      data-x="770"
+      data-y="385"
+      data-for="image">
+      Связка учебников 40-е годы
+    </a>
+
+    <map name="mapmuz">
+    <area class="lightview" 
+    data-lightview-caption="Ученический портфель 2000-е годы."
+    href="image/schoolbag/IMG_20180329_123804.jpg" 
+    title="Ученический портфель 2000-е годы" shape="poly" coords="767,605,760,390,674,385,693,388,908,400,922,421,931,439,926,448,932,476,934,512,934,557,926,568,923,574,922,585,919,591,829,614,795,616">
+    </map>
 
   </body>
 </html>
